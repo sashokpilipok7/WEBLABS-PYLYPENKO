@@ -1,0 +1,91 @@
+@transition: 0.2s;
+#colors() {
+  black: #000;
+  white: #fff;
+  grey: #525c67;
+  light-grey: #f9fbfc;
+  blue: #525c67;
+  light-blue: #448aff;
+}
+#fonts() {
+  gilroy-b: "Gilroy-Bold";
+  gilroy-r: "Gilroy-Regular";
+  gilroy-l: "Gilroy-UltraLight";
+  roboto: "Roboto";
+}
+*:focus {
+  outline: none;
+}
+body {
+  margin: 0;
+  font-family: #fonts[gilroy-r];
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: #fonts[gilroy-b];
+  font-weight: normal;
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+}
+.word-break-all {
+  word-break: break-all;
+}
+.w-100 {
+  width: 100%;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-lg-center {
+  @media (min-width: 992px) {
+    text-align: center !important;
+  }
+}
+.text-lg-left {
+  @media (min-width: 992px) {
+    text-align: left !important;
+  }
+}
+.block-desctop {
+  display: none !important;
+  @media (min-width: 992px) {
+    display: block !important;
+  }
+}
+.block-mobile {
+  display: block !important;
+  @media (min-width: 992px) {
+    display: none !important;
+  }
+}
+.d-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-beetwen {
+  justify-content: space-between;
+}
+@media (min-width: 1200px) {
+  .container-md {
+    max-width: 960px;
+  }
+}
+@import "mixin.less";
+@import "burger.less";
+@import "blocks.less";
