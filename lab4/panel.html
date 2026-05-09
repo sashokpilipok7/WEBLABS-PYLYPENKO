@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Аналітична панель DataRoks з фіксованим сайдбаром, адаптивними віджетами та container queries для приховування іконок на вузьких елементах." />
+  <meta property="og:title" content="DataRoks Dashboard" />
+  <meta property="og:description" content="Сучасний інтерфейс для аналітики з боковою панеллю та гнучкою візуалізацією віджетів." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/lab3/img/dashboard-preview.png" />
+  <title>DataRoks Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/panel.css">
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="sidebar__brand">DataRoks</div>
+      <nav aria-label="Категорії сервісів">
+        <ul class="sidebar__list">
+          <li class="sidebar__item"><a href="#dashboard">Панель</a></li>
+          <li class="sidebar__item"><a href="#widgets">Віджети</a></li>
+          <li class="sidebar__item"><a href="#overview">Огляд</a></li>
+          <li class="sidebar__item"><a href="#reports">Звіти</a></li>
+          <li class="sidebar__item"><a href="#settings">Налаштування</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar__footer">Швидкий доступ до основних метрик і сервісів.</div>
+    </aside>
+    <main>
+      <section class="hero" id="dashboard" aria-labelledby="dashboard-title">
+        <header>
+          <h1 class="hero__title" id="dashboard-title">Аналітична панель DataRoks</h1>
+          <p class="hero__text">Зручний інтерфейс для аналітики з боковою панеллю та віджетами.</p>
+        </header>
+      </section>
+
+      <section class="widgets" role="list" id="widgets" aria-label="Аналітичні віджети">
+        <article class="widget" role="listitem">
+          <div class="widget__icon" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-dots"></i></div>
+          <div class="widget__content">
+            <h2 class="widget__title">Трафік</h2>
+            <p class="widget__description">Живі дані про відвідуваність сайту з Google Analytics.</p>
+            <p class="widget__meta"><data value="78">78%</data> зростання за тиждень</p>
+          </div>
+        </article>
+
+        <article class="widget" role="listitem">
+          <div class="widget__icon" aria-hidden="true"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          <div class="widget__content">
+            <h2 class="widget__title">Конверсії</h2>
+            <p class="widget__description">Відстеження важливих конверсійних цілей і їх ефективності.</p>
+            <p class="widget__meta"><data value="24">24</data> важливі дії сьогодні</p>
+          </div>
+        </article>
+
+        <article class="widget" role="listitem">
+          <div class="widget__icon" aria-hidden="true"><i class="fa-solid fa-sliders"></i></div>
+          <div class="widget__content">
+            <h2 class="widget__title">Налаштування</h2>
+            <p class="widget__description">Перевірка Google Tag Manager, тегів та подій для коректних динамічних даних.</p>
+            <p class="widget__meta">10 перевірок у черзі</p>
+          </div>
+        </article>
+
+        <article class="widget" role="listitem">
+          <div class="widget__icon" aria-hidden="true"><i class="fa-solid fa-square-poll-vertical"></i></div>
+          <div class="widget__content">
+            <h2 class="widget__title">Результати</h2>
+            <p class="widget__description">Розгорнуті звіти з ключовими метриками для бізнесу.</p>
+            <p class="widget__meta">Звіт оновлено 12:45</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="overview" id="overview" aria-labelledby="overview-title">
+        <article class="metric">
+          <p class="metric__label">Вартість за клік</p>
+          <p class="metric__value">$1.24</p>
+        </article>
+        <article class="metric">
+          <p class="metric__label">CR</p>
+          <p class="metric__value">4.9%</p>
+        </article>
+        <article class="metric">
+          <p class="metric__label">Середній час</p>
+          <p class="metric__value">3m 12s</p>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
