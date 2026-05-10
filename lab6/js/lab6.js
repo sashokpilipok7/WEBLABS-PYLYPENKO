@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // const container = document.createElement("div");
   let container = document.querySelector(".header__nav");
 
   fetch("./js/menu.json")
